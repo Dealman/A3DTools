@@ -1,5 +1,5 @@
 # ArmA 3 EDEN Tools
-This is a plugin I made for ArmA 3's new 3D Editor - EDEN. It's main purpose is to make life easier when working with the Exile mod. It will generate code for you in a copy and paste format.
+This is a plugin I made for ArmA 3's new 3D Editor - EDEN. Its main purpose is to make life easier when working with the Exile mod. It will generate code for you in a copy and paste format.
 
 # Current Features
 | Feature  | Description |
