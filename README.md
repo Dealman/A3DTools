@@ -4,7 +4,7 @@ This is a plugin I made for ArmA 3's new 3D Editor - EDEN. Its main purpose is t
 # Current Features
 | Feature  | Description |
 | ------------- | ------------- |
-| Generate Code for Objects  | This will generate code compatible with Exile for all objects in the active scenario.  |
+| Generate Code for Objects  | This will generate code compatible with Exile for all objects in the active scenario. *Some edits to initServer.sqf may be required - will update with more info later.* |
 | Generate Code for Markers  | Much like the above, though I have not yet implemented this.  |
 | Create Spawn Group | This will create 100 units of type Exile_Unit_GhostPlayer - used for players when spawning. |
 | Generate Code for Spawns | This generates the code in the old SQM format. Some edits might be needed. |
