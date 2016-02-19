@@ -12,9 +12,29 @@ This is a plugin I made for ArmA 3's new 3D Editor - EDEN. It's main purpose is 
 | Toggle Loot Preview | This will spawn some loot on all the markers, giving you a preview of how it would look. |
 | Generate Code for Loot | This will generate the code in a copy and paste format, add this to your config.cpp. |
 | Clear Loot Sphere | This will delete all current loot spheres. **Does not yet work as intended** |
+| DT_fnc_DisplayCustom3DENNotification | This is a function which can be called from other addons, it lets you create entirely customized EDEN Editor notification messages. See syntax below. |
 
 #YouTube Video
 I put together a very basic video showcasing how the loot generation works, I'll try and create a better video later on where I explain how it all works. But most of it is rather self-explanatory. https://www.youtube.com/watch?v=ayW7DQb4-b8
+
+#DT_fnc_DisplayCustom3DENNotification Syntax
+```cpp
+/*
+	* Original Author: Bohemia Interactive (3den.pbo/Functions/fn_3DENNotification.sqf)
+
+Syntax:
+	[<TextMessage>, <BackgroundColor>, <TextColor>, <Sound>, <DisplayTime>] call DT_fnc_DisplayCustom3DENNotification;
+
+	* TextMessage: STRING - Message to be displayed
+	* Color: ARRAY - Background colour, example; [0.71, 0, 0, 1] would be opaque red background
+	* TextColor: STRING - Hex colour code for the text, defaults to #FFFFFF (White)
+	* Sound: INT or STRING
+		* Sound: INT - 0 or 1 (0 = "3DEN_notificationDefault" | 1 = "3DEN_notificationWarning")
+		* Sound: STRING - If you want to play another sound other than the 2 default ones, use a string
+	* DisplayTime: SCALAR - Time for the message to be displayed
+*/
+[format["Generated Code for %1 Loot Markers, Saved to Clipboard. Remember to change Table name!", (str numOfLoot)], [0, 0.30, 0.80, 0.40], "#BBCCDD", "ReadoutClick", 6] call DT_fnc_DisplayCustom3DENNotification;
+```
 
 # Known Issues
 • When clearing all loot spheres, the object themselves are removed. But the EDEN Editor icons remain and can be moved around - code is still generated despite the objects not really being there. Have yet to find a solution for this.
