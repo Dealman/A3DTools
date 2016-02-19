@@ -37,8 +37,8 @@ Syntax:
 ```
 
 # Known Issues
-• When clearing all loot spheres, the object themselves are removed. But the EDEN Editor icons remain and can be moved around - code is still generated despite the objects not really being there. Have yet to find a solution for this.
-• When deleting your selected target, the green outline remains. Again, yet to find a solutions since EDEN events don't seem to be working for me.
+• When clearing all loot spheres, the object themselves are removed. But the EDEN Editor icons remain and can be moved around - code is still generated despite the objects not really being there. Have yet to find a solution for this.  
+• When deleting your selected target, the green outline remains. Again, yet to find a solutions since EDEN events don't seem to be working for me.  
 • More to come...
 
 # Changelog
