@@ -36,6 +36,9 @@ Syntax:
 [format["Generated Code for %1 Loot Markers, Saved to Clipboard. Remember to change Table name!", (str numOfLoot)], [0, 0.30, 0.80, 0.40], "#BBCCDD", "ReadoutClick", 6] call DT_fnc_DisplayCustom3DENNotification;
 ```
 
+# Note for Generated Objects
+The format I generate the code in is different from that of Exile's code because mine uses setVectorDirAndUp so buildings maintain the correct rotation. Please refer to this thread for details on how to fix this; http://www.exilemod.com/topic/14000-problems-with-eden-custom-buildings/?do=findComment&comment=90761
+
 # Known Issues
 • When clearing all loot spheres, the object themselves are removed. But the EDEN Editor icons remain and can be moved around - code is still generated despite the objects not really being there. Have yet to find a solution for this.  
 • When deleting your selected target, the green outline remains. Again, yet to find a solutions since EDEN events don't seem to be working for me.  
