@@ -14,10 +14,10 @@ This is a plugin I made for ArmA 3's new 3D Editor - EDEN. Its main purpose is t
 | Clear Loot Sphere | This will delete all current loot spheres. **Does not yet work as intended** |
 | DT_fnc_DisplayCustom3DENNotification | This is a function which can be called from other addons, it lets you create entirely customized EDEN Editor notification messages. See syntax below. |
 
-#YouTube Video
+# YouTube Video
 I put together a very basic video showcasing how the loot generation works, I'll try and create a better video later on where I explain how it all works. But most of it is rather self-explanatory. https://www.youtube.com/watch?v=ayW7DQb4-b8
 
-#DT_fnc_DisplayCustom3DENNotification Syntax
+# DT_fnc_DisplayCustom3DENNotification Syntax
 ```cpp
 /*
 	* Original Author: Bohemia Interactive (3den.pbo/Functions/fn_3DENNotification.sqf)
